@@ -112,7 +112,7 @@ public abstract class AbstractClinicServiceTests {
     public void shouldFindPetWithCorrectId() {
         Pet pet7 = this.clinicService.findPetById(7);
         assertThat(pet7.getName()).startsWith("Samantha");
-        assertThat(pet7.getOwner().getFirstName()).isEqualTo("Jean");
+        assertThat(pet7.getOwner().getFirstName()).isEqualTo("Jeantesthifi");
 
     }
 
@@ -170,7 +170,7 @@ public abstract class AbstractClinicServiceTests {
         Vet vet = EntityUtils.getById(vets, Vet.class, 3);
         assertThat(vet.getLastName()).isEqualTo("Douglas");
         assertThat(vet.getNrOfSpecialties()).isEqualTo(2);
-        assertThat(vet.getSpecialties().get(0).getName()).isEqualTo("dentistry");
+        assertThat(vet.getSpecialties().get(0).getName()).isEqualTo("dentistrytesthifi");
         assertThat(vet.getSpecialties().get(1).getName()).isEqualTo("surgery");
     }
 
